@@ -21,7 +21,7 @@ public class PutRequest {
 
         HashMap payload = new HashMap(); //Local variable of Hash Map used to create payload
         payload.put("id", "1");
-        payload.put("userName", "Alphae");
+        payload.put("userName", "Alph");
         payload.put("password", "n0!tAm0TUa");
 
         Response res = given().contentType(contentType).body(payload)
