@@ -13,8 +13,8 @@ public class PutRequest {
 
     public String urlPutUsers = "https://fakerestapi.azurewebsites.net/api/v1/Users/1";
     public String contentType = "application/json";
-    //public static Map payload = null; //Static variable of null Map
-    //public HashMap payload = null; //Instance variable of null HashMap
+    //public static Map payload = null; //Static variable of null Map.
+    //public HashMap payload = null; //Instance variable of null HashMap.
 
     @Test
     public void validatePutUpdateUser() {
