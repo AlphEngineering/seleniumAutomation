@@ -53,7 +53,7 @@ public class OrderDetailsPage {
         } catch (AssertionError e) {
             System.out.println("* Order Details are NOT displayed!");
         }
-        GenericMethods.pauseExecutionFor(4);
+        GenericMethods.pauseExecutionFor(5);
         closeFrameProductDetails.click();
     }
     public String orderDetailsID(){

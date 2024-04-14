@@ -18,7 +18,7 @@ public class PaymentDetailsPage {
     @FindBy(xpath="//div[@class='header-amount']")
     WebElement orderTotalBeforePromo;
     @FindBy(xpath = "//span[@class='title-text text-actionable-bold']")
-    WebElement paymentSelected;
+    WebElement correctPaymentSelected;
     @FindBy(xpath = "//input[@autocomplete='cc-number']")
     WebElement inputCardNumber;
     @FindBy(xpath = "//input[@id='card-expiry']")
@@ -39,7 +39,7 @@ public class PaymentDetailsPage {
     WebElement buttonPayNow;
     public void paymentDetails(){
         try{
-            Assert.assertTrue(paymentSelected.isDisplayed());
+            Assert.assertTrue(correctPaymentSelected.isDisplayed());
         }catch(AssertionError e){
             System.out.println("* Payment Credit/Debit card is NOT selected!");
         }
@@ -76,7 +76,7 @@ public class PaymentDetailsPage {
     }
     public void buttonPayNow(){
         buttonPayNow.click();
-        GenericMethods.pauseExecutionFor(5);
+        GenericMethods.pauseExecutionFor(15);
     }
 
 
