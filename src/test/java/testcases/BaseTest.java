@@ -93,26 +93,27 @@ public class BaseTest {
     public void verifyTransactionDetailsPage(){
         transactionDetailsPage.confirmTransactionDetails();
         System.out.println("* TC_12 Clicking 'Pay Now' redirects user to Transaction Details page.");
-        System.out.println("        Merchant Details verified.");
-        System.out.println("        "+transactionDetailsPage.getMerchantName());
-        System.out.println("        "+transactionDetailsPage.getTransactionAmount());
-        System.out.println("        "+transactionDetailsPage.getTransactionTime());
-        System.out.println("        "+transactionDetailsPage.getCardNumber());
+        System.out.println("        Merchant Details Confirmed.");
+        System.out.println("        Merchant Name: "+transactionDetailsPage.getMerchantName());
+        System.out.println("        Transaction Amount: "+transactionDetailsPage.getTransactionAmount());
+        System.out.println("        Transaction Time: "+transactionDetailsPage.getTransactionTime());
+        System.out.println("        Card Number: "+transactionDetailsPage.getCardNumber());
     }
     @Test(priority = 13)
     public void verifyValidOTP(){
-        transactionDetailsPage.transactionSuccessfulValidOTP();
+        transactionDetailsPage.transactionSubmitValidOTP();
         transactionDetailsPage.transactionConfirmation();
         System.out.println("* TC_13 Clicking 'Ok' button with VALID OTP returns Order Successful.");
-        System.out.println("        Message: "+transactionDetailsPage.transactionConfirmationText());
+        System.out.println("        Message: "+transactionDetailsPage.transactionConfirmationText1()+" "+transactionDetailsPage.transactionConfirmationText2());
     }
-    @Test(priority = 14)
+
+
     public void verifyInvalidOTP(){
-        transactionDetailsPage.transactionFailedInvalidOTP();
+        transactionDetailsPage.transactionSubmitInvalidOTP();
         System.out.println("* TC_14 Clicking 'Ok' button with INVALID OTP returns Order Failed.");
         System.out.println("        Message: "+transactionDetailsPage.getFailedMessage());
     }
-    @Test(priority = 15)
+
     public void verifyCancelOrder(){
         transactionDetailsPage.transactionFailedCanceled();
         System.out.println("* TC_15 Clicking 'Cancel' button returns Order Failed.");

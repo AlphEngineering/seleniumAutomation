@@ -15,6 +15,8 @@ public class TransactionDetailsPage {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
+    @FindBy(xpath="//iframe[@title='3ds-iframe']")
+    WebElement transactionFrame;
     @FindBy (xpath = "//h1[@class='left']")
     WebElement transactionDetailsPage;
     @FindBy (xpath = "//p[@id='merchant_name']")
@@ -42,9 +44,12 @@ public class TransactionDetailsPage {
     @FindBy(xpath = "//div[@class='text-headline medium']")//div[@class='success-wrapper']
     WebElement transactionSuccessfulPopup;
     @FindBy(xpath = "//span[@data-reactid='.0.0.0.2.0.1.0.0:0']")
-    WebElement transactionConfirmed;
+    WebElement transactionConfirmed1;
+    @FindBy(xpath = "//span[@data-reactid='.0.0.0.2.0.1.0.0:2']")
+    WebElement transactionConfirmed2;
 
     public void confirmTransactionDetails(){
+        driver.switchTo().frame(transactionFrame);
         try{
             Assert.assertTrue(transactionDetailsPage.isDisplayed());
             Assert.assertTrue(merchantName.isDisplayed());
@@ -67,28 +72,27 @@ public class TransactionDetailsPage {
     public String getCardNumber(){
         return transactionCardNumber.getText();
     }
-    public void transactionSuccessfulValidOTP(){ //Submits valid merchant OTP
+    public void transactionSubmitValidOTP(){ //Submits valid merchant OTP
         inputMerchantOTP.sendKeys(propertyMerchant.getProperty("merchantOTP"));
         buttonOk.click();
-        GenericMethods.pauseExecutionFor(3);
-        try{
-            Assert.assertTrue(transactionSuccessfulPopup.isDisplayed());
-        }catch (AssertionError e) {
-            System.out.println("* Transaction successful screen was NOT displayed!");
-        }
     }
     public void transactionConfirmation(){
-        GenericMethods.pauseExecutionFor(6);
+        GenericMethods.pauseExecutionFor(8);
+        driver.switchTo().defaultContent();
         try{
-            Assert.assertTrue(transactionConfirmed.isDisplayed());
+            Assert.assertTrue(transactionConfirmed1.isDisplayed());
+            Assert.assertTrue(transactionConfirmed2.isDisplayed());
         }catch (AssertionError e) {
             System.out.println("* Transaction confirmation was NOT displayed!");
         }
     }
-    public String transactionConfirmationText(){
-        return transactionConfirmed.getText();
+    public String transactionConfirmationText1(){
+        return transactionConfirmed1.getText();
     }
-    public void transactionFailedInvalidOTP(){ //Submits invalid merchant OTP
+    public String transactionConfirmationText2(){
+        return transactionConfirmed2.getText();
+    }
+    public void transactionSubmitInvalidOTP(){ //Submits invalid merchant OTP
         inputMerchantOTP.sendKeys(propertyMerchant.getProperty("invalidOTP"));
         buttonOk.click();
         GenericMethods.pauseExecutionFor(3);
