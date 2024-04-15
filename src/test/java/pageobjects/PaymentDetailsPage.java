@@ -76,7 +76,7 @@ public class PaymentDetailsPage {
     }
     public void buttonPayNow(){
         buttonPayNow.click();
-        GenericMethods.pauseExecutionFor(6);
+        GenericMethods.pauseExecutionFor(8);
     }
 
 

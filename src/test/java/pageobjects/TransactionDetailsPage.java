@@ -84,7 +84,7 @@ public class TransactionDetailsPage {
         buttonOk.click();
     }
     public void transactionConfirmation(){
-        GenericMethods.pauseExecutionFor(6);
+        GenericMethods.pauseExecutionFor(8);
         driver.switchTo().defaultContent();
         try{
             Assert.assertTrue(transactionConfirmed1.isDisplayed());
@@ -102,7 +102,7 @@ public class TransactionDetailsPage {
     public void transactionSubmitInvalidOTP(){ //Submits invalid merchant OTP
         inputMerchantOTP.sendKeys(propertyMerchant.getProperty("invalidOTP"));
         buttonOk.click();
-        GenericMethods.pauseExecutionFor(3);
+        GenericMethods.pauseExecutionFor(4);
         driver.switchTo().parentFrame();
         try{
             Assert.assertTrue(paymentCanceledOrInvalidScreen.isDisplayed());
@@ -116,7 +116,7 @@ public class TransactionDetailsPage {
     public void continueAfterInvalidOTP(){ //Continue 'OK' after Invalid OTP
         buttonPaymentCanceledOK.click();
         closeTransactionWindow.click();
-        GenericMethods.pauseExecutionFor(3);
+        GenericMethods.pauseExecutionFor(4);
         driver.switchTo().defaultContent();
     }
     public String transactionInvalidMessageFinal(){
@@ -125,7 +125,7 @@ public class TransactionDetailsPage {
 
     public void transactionFailedCanceled(){ //Cancels the transaction
         buttonCancel.click();
-        GenericMethods.pauseExecutionFor(3);
+        GenericMethods.pauseExecutionFor(4);
         driver.switchTo().parentFrame();
         try{
             Assert.assertTrue(paymentCanceledOrInvalidScreen.isDisplayed());
@@ -136,7 +136,7 @@ public class TransactionDetailsPage {
     public void continueAfterCancelOrder(){ //Continue 'OK' after Cancel Order.
         buttonPaymentCanceledOK.click();
         closeTransactionWindow.click();
-        GenericMethods.pauseExecutionFor(3);
+        GenericMethods.pauseExecutionFor(4);
         driver.switchTo().defaultContent();
     }
     public String transactionCancelledMessageFinal(){

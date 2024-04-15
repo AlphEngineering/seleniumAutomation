@@ -25,7 +25,7 @@ public class BaseTest {
         paymentDetailsPage = new PaymentDetailsPage(driver);
         transactionDetailsPage = new TransactionDetailsPage(driver);
     }
-    @Test
+    @Test(priority = 1)
     public void verifyButtonNavigation(){
         System.out.println("* URL:  "+homePage.getCurrentUrl());
         homePage.verifyBuyNowIsDisplayed();
@@ -33,47 +33,47 @@ public class BaseTest {
         shoppingDetailsPage.verifyShoppingCartIsDisplayed();
         System.out.println("* TC_1 Button 'BuyNow' redirects to Shopping Cart page.");
     }
-    @Test
+    @Test(priority = 2)
     public void verifyProductAddedToCart(){
         shoppingDetailsPage.productAddedToCart();
         System.out.println("* TC_2 Button 'Midtrans Pillow' is added to Cart @ Rp 20,000.");
     }
-    @Test
+    @Test(priority = 3)
     public void verifyCustomerDetails(){
         shoppingDetailsPage.customerDetailsDisplayed();
         System.out.println("* TC_3 Customer Details are displayed on Shopping Cart.");
     }
-    @Test
+    @Test(priority = 4)
     public void verifyCustomerDetailsCanEdit(){
         shoppingDetailsPage.inputCustomerDetails();
         System.out.println("* TC_4 Customer Details are editable and user can enter details.");
     }
-    @Test
+    @Test(priority = 5)
     public void verifyCheckoutNavigation(){
         shoppingDetailsPage.clickToCheckOut();
         System.out.println("* TC_5 Button 'Checkout' navigates to Order Details page.");
     }
-    @Test
+    @Test(priority = 6)
     public void verifyProductDetails(){
         orderDetailsPage.orderDetailsScreen();
         System.out.println("* TC_6 Product details confirmed. "+orderDetailsPage.orderDetailsID());
     }
-    @Test
+    @Test(priority = 7)
     public void verifyOrderDetailsCheckoutButton(){
         System.out.println("* TC_7 No additional 'Checkout' button. Payments already listed.");
     }
-    @Test
+    @Test(priority = 8)
     public void verifyPaymentsAvailable(){
         orderDetailsPage.paymentOptions();
         System.out.println("* TC_8 All payments listed: GoPay, Virtual Account, Credit/Debit, ShopeePay, QRIS, Alfa Group, Indomaret, Akulaku, Kredivo");
     }
-    @Test
+    @Test(priority = 9)
     public void verifyPaymentSelectionAndNavigation(){
         orderDetailsPage.selectPayment();
         paymentDetailsPage.paymentDetails();
         System.out.println("* TC_9 Payment Credit/Debit selected. Navigation to Card Details page successful.");
     }
-    @Test
+    @Test(priority = 10)
     public void verifyOrder(){
         paymentDetailsPage.orderTotalIsDisplayed();
         System.out.println("* TC_10 Order total before Promo: "+paymentDetailsPage.orderTotalPrePromo());
@@ -81,13 +81,13 @@ public class BaseTest {
         System.out.println("        Promo amount: "+paymentDetailsPage.orderPromoAmount());
         System.out.println("        Order total after Promo: "+paymentDetailsPage.orderTotalPostPromo());
     }
-    @Test
+    @Test(priority = 11)
     public void verifyCardEntryAndPay(){
         paymentDetailsPage.entryCardDetails();
         paymentDetailsPage.buttonPayNow();
         System.out.println("* TC_11 Credit/Debit card entry confirmed. 'Pay Now' button clicked");
     }
-    @Test
+    @Test(priority = 12)
     public void verifyTransactionDetailsPage(){
         transactionDetailsPage.confirmTransactionDetails();
         System.out.println("* TC_12 Clicking 'Pay Now' redirects user to Transaction Details page.");
@@ -97,7 +97,7 @@ public class BaseTest {
         System.out.println("        Transaction Time: "+transactionDetailsPage.getTransactionTime());
         System.out.println("        Card Number: "+transactionDetailsPage.getCardNumber());
     }
-    @Test
+    @Test(priority = 13)
     public void verifyValidOTP(){
         transactionDetailsPage.transactionSubmitValidOTP();
         transactionDetailsPage.transactionConfirmation();

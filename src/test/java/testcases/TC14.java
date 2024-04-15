@@ -25,7 +25,7 @@ public class TC14 {
         paymentDetailsPage = new PaymentDetailsPage(driver);
         transactionDetailsPage = new TransactionDetailsPage(driver);
     }
-    @Test
+    @Test(priority = 1, groups = { "all", "regression", "sanity" })
     public void verifyButtonNavigation(){
         System.out.println("* URL:  "+homePage.getCurrentUrl());
         homePage.verifyBuyNowIsDisplayed();
@@ -33,47 +33,47 @@ public class TC14 {
         shoppingDetailsPage.verifyShoppingCartIsDisplayed();
         System.out.println("* TC_1 Button 'BuyNow' redirects to Shopping Cart page.");
     }
-    @Test
+    @Test(priority = 2, groups = { "all", "sanity" })
     public void verifyProductAddedToCart(){
         shoppingDetailsPage.productAddedToCart();
         System.out.println("* TC_2 Button 'Midtrans Pillow' is added to Cart @ Rp 20,000.");
     }
-    @Test
+    @Test(priority = 3, groups = { "all", "regression" })
     public void verifyCustomerDetails(){
         shoppingDetailsPage.customerDetailsDisplayed();
         System.out.println("* TC_3 Customer Details are displayed on Shopping Cart.");
     }
-    @Test
+    @Test(priority = 4, groups = { "all", "regression" })
     public void verifyCustomerDetailsCanEdit(){
         shoppingDetailsPage.inputCustomerDetails();
         System.out.println("* TC_4 Customer Details are editable and user can enter details.");
     }
-    @Test
+    @Test(priority = 5, groups = { "all", "sanity" })
     public void verifyCheckoutNavigation(){
         shoppingDetailsPage.clickToCheckOut();
         System.out.println("* TC_5 Button 'Checkout' navigates to Order Details page.");
     }
-    @Test
+    @Test(priority = 6, groups = { "all", "regression" })
     public void verifyProductDetails(){
         orderDetailsPage.orderDetailsScreen();
         System.out.println("* TC_6 Product details confirmed. "+orderDetailsPage.orderDetailsID());
     }
-    @Test
+    @Test(priority = 7, groups = { "all", "sanity" })
     public void verifyOrderDetailsCheckoutButton(){
         System.out.println("* TC_7 No additional 'Checkout' button. Payments already listed.");
     }
-    @Test
+    @Test(priority = 8, groups = { "all", "regression" })
     public void verifyPaymentsAvailable(){
         orderDetailsPage.paymentOptions();
         System.out.println("* TC_8 All payments listed: GoPay, Virtual Account, Credit/Debit, ShopeePay, QRIS, Alfa Group, Indomaret, Akulaku, Kredivo");
     }
-    @Test
+    @Test(priority = 9, groups = { "all", "sanity" })
     public void verifyPaymentSelectionAndNavigation(){
         orderDetailsPage.selectPayment();
         paymentDetailsPage.paymentDetails();
         System.out.println("* TC_9 Payment Credit/Debit selected. Navigation to Card Details page successful.");
     }
-    @Test
+    @Test(priority = 10, groups = { "all", "regression" })
     public void verifyOrder(){
         paymentDetailsPage.orderTotalIsDisplayed();
         System.out.println("* TC_10 Order total before Promo: "+paymentDetailsPage.orderTotalPrePromo());
@@ -81,13 +81,13 @@ public class TC14 {
         System.out.println("        Promo amount: "+paymentDetailsPage.orderPromoAmount());
         System.out.println("        Order total after Promo: "+paymentDetailsPage.orderTotalPostPromo());
     }
-    @Test
+    @Test(priority = 11, groups = { "all", "regression" })
     public void verifyCardEntryAndPay(){
         paymentDetailsPage.entryCardDetails();
         paymentDetailsPage.buttonPayNow();
         System.out.println("* TC_11 Credit/Debit card entry confirmed. 'Pay Now' button clicked");
     }
-    @Test
+    @Test(priority = 12, groups = { "all", "sanity" })
     public void verifyTransactionDetailsPage(){
         transactionDetailsPage.confirmTransactionDetails();
         System.out.println("* TC_12 Clicking 'Pay Now' redirects user to Transaction Details page.");
@@ -98,7 +98,7 @@ public class TC14 {
         System.out.println("        Card Number: "+transactionDetailsPage.getCardNumber());
     }
 
-    @Test
+    @Test(priority = 13, groups = { "all", "regression", "sanity" })
     public void verifyInvalidOTP(){
         transactionDetailsPage.transactionSubmitInvalidOTP();
         System.out.println("* TC_14 Clicking 'Ok' button with INVALID OTP returns - Order Failed.");

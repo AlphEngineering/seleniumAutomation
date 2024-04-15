@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Single">
+<suite name="Automation Group Test">
     <parameter name="config" value="single.conf.json"/>
-    <test name="SingleTest" thread-count="1" parallel="tests">
+    <test name="Parallel Test" thread-count="1" parallel="classes">
         <groups>
             <run>
-                <include name="regression"/>
-                <include name="sanity"/>
+                <include name="all" />
+                <exclude name="regression" />
+                <exclude name="sanity" />
             </run>
         </groups>
         <classes>
