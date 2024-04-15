@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import pageobjects.*;
 import utils.BrowserFactory;
 
-public class BaseTest {
+public class TC13 {
     WebDriver driver = null;
     HomePage homePage;
     ShoppingDetailsPage shoppingDetailsPage;
@@ -106,22 +106,6 @@ public class BaseTest {
         System.out.println("        Returned Home -  "+transactionDetailsPage.transactionConfirmationText1()+" "+transactionDetailsPage.transactionConfirmationText2());
     }
 
-    //@Test
-    public void verifyInvalidOTP(){
-        transactionDetailsPage.transactionSubmitInvalidOTP();
-        System.out.println("* TC_14 Clicking 'Ok' button with INVALID OTP returns - Order Failed.");
-        System.out.println("        Message: "+transactionDetailsPage.getFailedMessage());
-        transactionDetailsPage.continueAfterInvalidOTP();
-        System.out.println("        Returned Home - "+transactionDetailsPage.transactionInvalidMessageFinal());
-    }
-    //@Test
-    public void verifyCancelOrder(){
-        transactionDetailsPage.transactionFailedCanceled();
-        System.out.println("* TC_15 Clicking 'Cancel' button returns - Order Failed.");
-        System.out.println("        Message: "+transactionDetailsPage.getFailedMessage());
-        transactionDetailsPage.continueAfterCancelOrder();
-        System.out.println("        Returned Home - "+transactionDetailsPage.transactionCancelledMessageFinal());
-    }
     @AfterClass
     public void quit(){
         driver.close();

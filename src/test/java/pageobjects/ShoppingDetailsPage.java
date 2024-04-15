@@ -39,6 +39,7 @@ public class ShoppingDetailsPage {
     @FindBy(xpath = "//div[@class='cart-checkout']")
     WebElement buttonCheckOut;
     public void verifyShoppingCartIsDisplayed(){
+        GenericMethods.pauseExecutionFor(1);
         try {
             Assert.assertTrue(shoppingCartPage.isDisplayed());
         }catch (AssertionError e){

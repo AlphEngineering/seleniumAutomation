@@ -17,6 +17,8 @@ public class TransactionDetailsPage {
     }
     @FindBy(xpath="//iframe[@title='3ds-iframe']")
     WebElement transactionFrame;
+    @FindBy(xpath="//iframe[@id='snap-midtrans']")
+    WebElement frameOrderPage;
     @FindBy (xpath = "//h1[@class='left']")
     WebElement transactionDetailsPage;
     @FindBy (xpath = "//p[@id='merchant_name']")
@@ -35,7 +37,7 @@ public class TransactionDetailsPage {
     WebElement buttonCancel;
     @FindBy(xpath = "//button[@name='resend']")
     WebElement buttonResetTimer;
-    @FindBy(xpath = "//div[@class='cancel-modal-title']")
+    @FindBy(xpath = "//*[contains(text(),'Payment declined by bank')]")
     WebElement paymentCanceledOrInvalidScreen;
     @FindBy(xpath = "//button[normalize-space()='OK']")
     WebElement buttonPaymentCanceledOK;
@@ -47,7 +49,12 @@ public class TransactionDetailsPage {
     WebElement transactionConfirmed1;
     @FindBy(xpath = "//span[@data-reactid='.0.0.0.2.0.1.0.0:2']")
     WebElement transactionConfirmed2;
-
+    @FindBy(xpath="//div[@class='close-snap-button clickable']")
+    WebElement closeTransactionWindow;
+    @FindBy(xpath = "//span[@data-reactid='.0.0.0.2.0.1.0.0:0']")
+    WebElement transactionInvalidFinalMessage;
+    @FindBy(xpath = "//span[@data-reactid='.0.0.0.2.0.1.0.0:0']")
+    WebElement transactionCanceledFinalMessage;
     public void confirmTransactionDetails(){
         driver.switchTo().frame(transactionFrame);
         try{
@@ -77,7 +84,7 @@ public class TransactionDetailsPage {
         buttonOk.click();
     }
     public void transactionConfirmation(){
-        GenericMethods.pauseExecutionFor(8);
+        GenericMethods.pauseExecutionFor(6);
         driver.switchTo().defaultContent();
         try{
             Assert.assertTrue(transactionConfirmed1.isDisplayed());
@@ -96,27 +103,44 @@ public class TransactionDetailsPage {
         inputMerchantOTP.sendKeys(propertyMerchant.getProperty("invalidOTP"));
         buttonOk.click();
         GenericMethods.pauseExecutionFor(3);
+        driver.switchTo().parentFrame();
         try{
             Assert.assertTrue(paymentCanceledOrInvalidScreen.isDisplayed());
         }catch (AssertionError e) {
             System.out.println("* Payment Invalid screen is NOT displayed!");
         }
-        GenericMethods.pauseExecutionFor(5);
-        buttonPaymentInvalidBack.click();
     }
+    public String getFailedMessage(){
+        return paymentCanceledOrInvalidScreen.getText();
+    }
+    public void continueAfterInvalidOTP(){ //Continue 'OK' after Invalid OTP
+        buttonPaymentCanceledOK.click();
+        closeTransactionWindow.click();
+        GenericMethods.pauseExecutionFor(3);
+        driver.switchTo().defaultContent();
+    }
+    public String transactionInvalidMessageFinal(){
+        return transactionInvalidFinalMessage.getText();
+    }
+
     public void transactionFailedCanceled(){ //Cancels the transaction
         buttonCancel.click();
         GenericMethods.pauseExecutionFor(3);
+        driver.switchTo().parentFrame();
         try{
             Assert.assertTrue(paymentCanceledOrInvalidScreen.isDisplayed());
         }catch (AssertionError e) {
             System.out.println("* Payment Canceled screen is NOT displayed!");
         }
-        GenericMethods.pauseExecutionFor(5);
-        buttonPaymentCanceledOK.click();
     }
-    public String getFailedMessage(){
-        return paymentCanceledOrInvalidScreen.getText();
+    public void continueAfterCancelOrder(){ //Continue 'OK' after Cancel Order.
+        buttonPaymentCanceledOK.click();
+        closeTransactionWindow.click();
+        GenericMethods.pauseExecutionFor(3);
+        driver.switchTo().defaultContent();
+    }
+    public String transactionCancelledMessageFinal(){
+        return transactionCanceledFinalMessage.getText();
     }
     public void resetTimer(){
         buttonResetTimer.click();

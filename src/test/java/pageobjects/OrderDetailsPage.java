@@ -53,7 +53,7 @@ public class OrderDetailsPage {
         } catch (AssertionError e) {
             System.out.println("* Order Details are NOT displayed!");
         }
-        GenericMethods.pauseExecutionFor(5);
+        GenericMethods.pauseExecutionFor(4);
         closeFrameProductDetails.click();
     }
     public String orderDetailsID(){
@@ -76,7 +76,7 @@ public class OrderDetailsPage {
     }
     public void selectPayment(){
         paymentTypeCreditCard.click();
-        GenericMethods.pauseExecutionFor(3);
+        GenericMethods.pauseExecutionFor(2);
     }
 
 

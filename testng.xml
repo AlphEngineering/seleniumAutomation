@@ -2,16 +2,17 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Single">
     <parameter name="config" value="single.conf.json"/>
-    <test name="SingleTest" thread-count="1" parallel="false">
+    <test name="SingleTest" thread-count="1" parallel="tests">
         <groups>
             <run>
-                <include name="all"/>
                 <include name="regression"/>
                 <include name="sanity"/>
             </run>
         </groups>
         <classes>
-            <class name="testcases.BaseTest"/>
+            <class name="testcases.TC13"/>
+            <class name="testcases.TC14"/>
+            <class name="testcases.TC15"/>
         </classes>
 
     </test>
