@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="39" passed="39" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-15T20:25:24 PDT" name="Suite" finished-at="2024-04-15T20:27:21 PDT" duration-ms="117563">
+    <groups>
+      <group name="regression">
+        <method signature="TC13.verifyButtonNavigation()[pri:1, instance:testcases.TC13@ec756bd]" name="verifyButtonNavigation" class="testcases.TC13"/>
+        <method signature="TC14.verifyButtonNavigation()[pri:1, instance:testcases.TC14@14d3bc22]" name="verifyButtonNavigation" class="testcases.TC14"/>
+        <method signature="TC15.verifyButtonNavigation()[pri:1, instance:testcases.TC15@12d4bf7e]" name="verifyButtonNavigation" class="testcases.TC15"/>
+        <method signature="TC13.verifyProductAddedToCart()[pri:2, instance:testcases.TC13@ec756bd]" name="verifyProductAddedToCart" class="testcases.TC13"/>
+        <method signature="TC14.verifyProductAddedToCart()[pri:2, instance:testcases.TC14@14d3bc22]" name="verifyProductAddedToCart" class="testcases.TC14"/>
+        <method signature="TC15.verifyProductAddedToCart()[pri:2, instance:testcases.TC15@12d4bf7e]" name="verifyProductAddedToCart" class="testcases.TC15"/>
+        <method signature="TC13.verifyCustomerDetails()[pri:3, instance:testcases.TC13@ec756bd]" name="verifyCustomerDetails" class="testcases.TC13"/>
+        <method signature="TC14.verifyCustomerDetails()[pri:3, instance:testcases.TC14@14d3bc22]" name="verifyCustomerDetails" class="testcases.TC14"/>
+        <method signature="TC15.verifyCustomerDetails()[pri:3, instance:testcases.TC15@12d4bf7e]" name="verifyCustomerDetails" class="testcases.TC15"/>
+        <method signature="TC13.verifyCustomerDetailsCanEdit()[pri:4, instance:testcases.TC13@ec756bd]" name="verifyCustomerDetailsCanEdit" class="testcases.TC13"/>
+        <method signature="TC14.verifyCustomerDetailsCanEdit()[pri:4, instance:testcases.TC14@14d3bc22]" name="verifyCustomerDetailsCanEdit" class="testcases.TC14"/>
+        <method signature="TC15.verifyCustomerDetailsCanEdit()[pri:4, instance:testcases.TC15@12d4bf7e]" name="verifyCustomerDetailsCanEdit" class="testcases.TC15"/>
+        <method signature="TC13.verifyCheckoutNavigation()[pri:5, instance:testcases.TC13@ec756bd]" name="verifyCheckoutNavigation" class="testcases.TC13"/>
+        <method signature="TC14.verifyCheckoutNavigation()[pri:5, instance:testcases.TC14@14d3bc22]" name="verifyCheckoutNavigation" class="testcases.TC14"/>
+        <method signature="TC15.verifyCheckoutNavigation()[pri:5, instance:testcases.TC15@12d4bf7e]" name="verifyCheckoutNavigation" class="testcases.TC15"/>
+        <method signature="TC13.verifyProductDetails()[pri:6, instance:testcases.TC13@ec756bd]" name="verifyProductDetails" class="testcases.TC13"/>
+        <method signature="TC14.verifyProductDetails()[pri:6, instance:testcases.TC14@14d3bc22]" name="verifyProductDetails" class="testcases.TC14"/>
+        <method signature="TC15.verifyProductDetails()[pri:6, instance:testcases.TC15@12d4bf7e]" name="verifyProductDetails" class="testcases.TC15"/>
+        <method signature="TC13.verifyOrderDetailsCheckoutButton()[pri:7, instance:testcases.TC13@ec756bd]" name="verifyOrderDetailsCheckoutButton" class="testcases.TC13"/>
+        <method signature="TC14.verifyOrderDetailsCheckoutButton()[pri:7, instance:testcases.TC14@14d3bc22]" name="verifyOrderDetailsCheckoutButton" class="testcases.TC14"/>
+        <method signature="TC15.verifyOrderDetailsCheckoutButton()[pri:7, instance:testcases.TC15@12d4bf7e]" name="verifyOrderDetailsCheckoutButton" class="testcases.TC15"/>
+        <method signature="TC13.verifyPaymentsAvailable()[pri:8, instance:testcases.TC13@ec756bd]" name="verifyPaymentsAvailable" class="testcases.TC13"/>
+        <method signature="TC14.verifyPaymentsAvailable()[pri:8, instance:testcases.TC14@14d3bc22]" name="verifyPaymentsAvailable" class="testcases.TC14"/>
+        <method signature="TC15.verifyPaymentsAvailable()[pri:8, instance:testcases.TC15@12d4bf7e]" name="verifyPaymentsAvailable" class="testcases.TC15"/>
+        <method signature="TC13.verifyPaymentSelectionAndNavigation()[pri:9, instance:testcases.TC13@ec756bd]" name="verifyPaymentSelectionAndNavigation" class="testcases.TC13"/>
+        <method signature="TC14.verifyPaymentSelectionAndNavigation()[pri:9, instance:testcases.TC14@14d3bc22]" name="verifyPaymentSelectionAndNavigation" class="testcases.TC14"/>
+        <method signature="TC15.verifyPaymentSelectionAndNavigation()[pri:9, instance:testcases.TC15@12d4bf7e]" name="verifyPaymentSelectionAndNavigation" class="testcases.TC15"/>
+        <method signature="TC13.verifyOrder()[pri:10, instance:testcases.TC13@ec756bd]" name="verifyOrder" class="testcases.TC13"/>
+        <method signature="TC14.verifyOrder()[pri:10, instance:testcases.TC14@14d3bc22]" name="verifyOrder" class="testcases.TC14"/>
+        <method signature="TC15.verifyOrder()[pri:10, instance:testcases.TC15@12d4bf7e]" name="verifyOrder" class="testcases.TC15"/>
+        <method signature="TC13.verifyCardEntryAndPay()[pri:11, instance:testcases.TC13@ec756bd]" name="verifyCardEntryAndPay" class="testcases.TC13"/>
+        <method signature="TC14.verifyCardEntryAndPay()[pri:11, instance:testcases.TC14@14d3bc22]" name="verifyCardEntryAndPay" class="testcases.TC14"/>
+        <method signature="TC15.verifyCardEntryAndPay()[pri:11, instance:testcases.TC15@12d4bf7e]" name="verifyCardEntryAndPay" class="testcases.TC15"/>
+        <method signature="TC13.verifyTransactionDetailsPage()[pri:12, instance:testcases.TC13@ec756bd]" name="verifyTransactionDetailsPage" class="testcases.TC13"/>
+        <method signature="TC14.verifyTransactionDetailsPage()[pri:12, instance:testcases.TC14@14d3bc22]" name="verifyTransactionDetailsPage" class="testcases.TC14"/>
+        <method signature="TC15.verifyTransactionDetailsPage()[pri:12, instance:testcases.TC15@12d4bf7e]" name="verifyTransactionDetailsPage" class="testcases.TC15"/>
+        <method signature="TC13.verifyValidOTP()[pri:13, instance:testcases.TC13@ec756bd]" name="verifyValidOTP" class="testcases.TC13"/>
+        <method signature="TC14.verifyInvalidOTP()[pri:13, instance:testcases.TC14@14d3bc22]" name="verifyInvalidOTP" class="testcases.TC14"/>
+        <method signature="TC15.verifyCancelOrder()[pri:13, instance:testcases.TC15@12d4bf7e]" name="verifyCancelOrder" class="testcases.TC15"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="TC13.verifyButtonNavigation()[pri:1, instance:testcases.TC13@ec756bd]" name="verifyButtonNavigation" class="testcases.TC13"/>
+        <method signature="TC14.verifyButtonNavigation()[pri:1, instance:testcases.TC14@14d3bc22]" name="verifyButtonNavigation" class="testcases.TC14"/>
+        <method signature="TC15.verifyButtonNavigation()[pri:1, instance:testcases.TC15@12d4bf7e]" name="verifyButtonNavigation" class="testcases.TC15"/>
+        <method signature="TC13.verifyProductAddedToCart()[pri:2, instance:testcases.TC13@ec756bd]" name="verifyProductAddedToCart" class="testcases.TC13"/>
+        <method signature="TC14.verifyProductAddedToCart()[pri:2, instance:testcases.TC14@14d3bc22]" name="verifyProductAddedToCart" class="testcases.TC14"/>
+        <method signature="TC15.verifyProductAddedToCart()[pri:2, instance:testcases.TC15@12d4bf7e]" name="verifyProductAddedToCart" class="testcases.TC15"/>
+        <method signature="TC13.verifyCustomerDetails()[pri:3, instance:testcases.TC13@ec756bd]" name="verifyCustomerDetails" class="testcases.TC13"/>
+        <method signature="TC14.verifyCustomerDetails()[pri:3, instance:testcases.TC14@14d3bc22]" name="verifyCustomerDetails" class="testcases.TC14"/>
+        <method signature="TC15.verifyCustomerDetails()[pri:3, instance:testcases.TC15@12d4bf7e]" name="verifyCustomerDetails" class="testcases.TC15"/>
+        <method signature="TC13.verifyCustomerDetailsCanEdit()[pri:4, instance:testcases.TC13@ec756bd]" name="verifyCustomerDetailsCanEdit" class="testcases.TC13"/>
+        <method signature="TC14.verifyCustomerDetailsCanEdit()[pri:4, instance:testcases.TC14@14d3bc22]" name="verifyCustomerDetailsCanEdit" class="testcases.TC14"/>
+        <method signature="TC15.verifyCustomerDetailsCanEdit()[pri:4, instance:testcases.TC15@12d4bf7e]" name="verifyCustomerDetailsCanEdit" class="testcases.TC15"/>
+        <method signature="TC13.verifyCheckoutNavigation()[pri:5, instance:testcases.TC13@ec756bd]" name="verifyCheckoutNavigation" class="testcases.TC13"/>
+        <method signature="TC14.verifyCheckoutNavigation()[pri:5, instance:testcases.TC14@14d3bc22]" name="verifyCheckoutNavigation" class="testcases.TC14"/>
+        <method signature="TC15.verifyCheckoutNavigation()[pri:5, instance:testcases.TC15@12d4bf7e]" name="verifyCheckoutNavigation" class="testcases.TC15"/>
+        <method signature="TC13.verifyProductDetails()[pri:6, instance:testcases.TC13@ec756bd]" name="verifyProductDetails" class="testcases.TC13"/>
+        <method signature="TC14.verifyProductDetails()[pri:6, instance:testcases.TC14@14d3bc22]" name="verifyProductDetails" class="testcases.TC14"/>
+        <method signature="TC15.verifyProductDetails()[pri:6, instance:testcases.TC15@12d4bf7e]" name="verifyProductDetails" class="testcases.TC15"/>
+        <method signature="TC13.verifyOrderDetailsCheckoutButton()[pri:7, instance:testcases.TC13@ec756bd]" name="verifyOrderDetailsCheckoutButton" class="testcases.TC13"/>
+        <method signature="TC14.verifyOrderDetailsCheckoutButton()[pri:7, instance:testcases.TC14@14d3bc22]" name="verifyOrderDetailsCheckoutButton" class="testcases.TC14"/>
+        <method signature="TC15.verifyOrderDetailsCheckoutButton()[pri:7, instance:testcases.TC15@12d4bf7e]" name="verifyOrderDetailsCheckoutButton" class="testcases.TC15"/>
+      </group> <!-- sanity -->
+    </groups>
+    <test started-at="2024-04-15T20:25:24 PDT" name="SeleniumAutomation" finished-at="2024-04-15T20:27:21 PDT" duration-ms="117563">
+      <class name="testcases.TC14">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC14@14d3bc22]" started-at="2024-04-15T20:26:06 PDT" name="setup" finished-at="2024-04-15T20:26:12 PDT" duration-ms="6439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyButtonNavigation()[pri:1, instance:testcases.TC14@14d3bc22]" started-at="2024-04-15T20:26:12 PDT" name="verifyButtonNavigation" finished-at="2024-04-15T20:26:13 PDT" duration-ms="1369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyButtonNavigation -->
+        <test-method signature="verifyProductAddedToCart()[pri:2, instance:testcases.TC14@14d3bc22]" started-at="2024-04-15T20:26:13 PDT" name="verifyProductAddedToCart" finished-at="2024-04-15T20:26:14 PDT" duration-ms="93" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductAddedToCart -->
+        <test-method signature="verifyCustomerDetails()[pri:3, instance:testcases.TC14@14d3bc22]" started-at="2024-04-15T20:26:14 PDT" name="verifyCustomerDetails" finished-at="2024-04-15T20:26:14 PDT" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCustomerDetails -->
+        <test-method signature="verifyCustomerDetailsCanEdit()[pri:4, instance:testcases.TC14@14d3bc22]" started-at="2024-04-15T20:26:14 PDT" name="verifyCustomerDetailsCanEdit" finished-at="2024-04-15T20:26:15 PDT" duration-ms="1653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCustomerDetailsCanEdit -->
+        <test-method signature="verifyCheckoutNavigation()[pri:5, instance:testcases.TC14@14d3bc22]" started-at="2024-04-15T20:26:15 PDT" name="verifyCheckoutNavigation" finished-at="2024-04-15T20:26:18 PDT" duration-ms="3143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCheckoutNavigation -->
+        <test-method signature="verifyProductDetails()[pri:6, instance:testcases.TC14@14d3bc22]" started-at="2024-04-15T20:26:19 PDT" name="verifyProductDetails" finished-at="2024-04-15T20:26:21 PDT" duration-ms="2859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductDetails -->
+        <test-method signature="verifyOrderDetailsCheckoutButton()[pri:7, instance:testcases.TC14@14d3bc22]" started-at="2024-04-15T20:26:21 PDT" name="verifyOrderDetailsCheckoutButton" finished-at="2024-04-15T20:26:21 PDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrderDetailsCheckoutButton -->
+        <test-method signature="verifyPaymentsAvailable()[pri:8, instance:testcases.TC14@14d3bc22]" started-at="2024-04-15T20:26:21 PDT" name="verifyPaymentsAvailable" finished-at="2024-04-15T20:26:22 PDT" duration-ms="613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPaymentsAvailable -->
+        <test-method signature="verifyPaymentSelectionAndNavigation()[pri:9, instance:testcases.TC14@14d3bc22]" started-at="2024-04-15T20:26:22 PDT" name="verifyPaymentSelectionAndNavigation" finished-at="2024-04-15T20:26:23 PDT" duration-ms="1395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPaymentSelectionAndNavigation -->
+        <test-method signature="verifyOrder()[pri:10, instance:testcases.TC14@14d3bc22]" started-at="2024-04-15T20:26:23 PDT" name="verifyOrder" finished-at="2024-04-15T20:26:24 PDT" duration-ms="781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrder -->
+        <test-method signature="verifyCardEntryAndPay()[pri:11, instance:testcases.TC14@14d3bc22]" started-at="2024-04-15T20:26:24 PDT" name="verifyCardEntryAndPay" finished-at="2024-04-15T20:26:33 PDT" duration-ms="8370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCardEntryAndPay -->
+        <test-method signature="verifyTransactionDetailsPage()[pri:12, instance:testcases.TC14@14d3bc22]" started-at="2024-04-15T20:26:33 PDT" name="verifyTransactionDetailsPage" finished-at="2024-04-15T20:26:33 PDT" duration-ms="344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTransactionDetailsPage -->
+        <test-method signature="verifyInvalidOTP()[pri:13, instance:testcases.TC14@14d3bc22]" started-at="2024-04-15T20:26:33 PDT" name="verifyInvalidOTP" finished-at="2024-04-15T20:26:43 PDT" duration-ms="10313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidOTP -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:testcases.TC14@14d3bc22]" started-at="2024-04-15T20:26:43 PDT" name="quit" finished-at="2024-04-15T20:26:44 PDT" duration-ms="368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- testcases.TC14 -->
+      <class name="testcases.TC13">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC13@ec756bd]" started-at="2024-04-15T20:25:24 PDT" name="setup" finished-at="2024-04-15T20:25:34 PDT" duration-ms="10134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyButtonNavigation()[pri:1, instance:testcases.TC13@ec756bd]" started-at="2024-04-15T20:25:34 PDT" name="verifyButtonNavigation" finished-at="2024-04-15T20:25:35 PDT" duration-ms="1527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyButtonNavigation -->
+        <test-method signature="verifyProductAddedToCart()[pri:2, instance:testcases.TC13@ec756bd]" started-at="2024-04-15T20:25:35 PDT" name="verifyProductAddedToCart" finished-at="2024-04-15T20:25:35 PDT" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductAddedToCart -->
+        <test-method signature="verifyCustomerDetails()[pri:3, instance:testcases.TC13@ec756bd]" started-at="2024-04-15T20:25:35 PDT" name="verifyCustomerDetails" finished-at="2024-04-15T20:25:36 PDT" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCustomerDetails -->
+        <test-method signature="verifyCustomerDetailsCanEdit()[pri:4, instance:testcases.TC13@ec756bd]" started-at="2024-04-15T20:25:36 PDT" name="verifyCustomerDetailsCanEdit" finished-at="2024-04-15T20:25:37 PDT" duration-ms="1766" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCustomerDetailsCanEdit -->
+        <test-method signature="verifyCheckoutNavigation()[pri:5, instance:testcases.TC13@ec756bd]" started-at="2024-04-15T20:25:37 PDT" name="verifyCheckoutNavigation" finished-at="2024-04-15T20:25:41 PDT" duration-ms="3185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCheckoutNavigation -->
+        <test-method signature="verifyProductDetails()[pri:6, instance:testcases.TC13@ec756bd]" started-at="2024-04-15T20:25:41 PDT" name="verifyProductDetails" finished-at="2024-04-15T20:25:43 PDT" duration-ms="2488" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductDetails -->
+        <test-method signature="verifyOrderDetailsCheckoutButton()[pri:7, instance:testcases.TC13@ec756bd]" started-at="2024-04-15T20:25:43 PDT" name="verifyOrderDetailsCheckoutButton" finished-at="2024-04-15T20:25:43 PDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrderDetailsCheckoutButton -->
+        <test-method signature="verifyPaymentsAvailable()[pri:8, instance:testcases.TC13@ec756bd]" started-at="2024-04-15T20:25:43 PDT" name="verifyPaymentsAvailable" finished-at="2024-04-15T20:25:43 PDT" duration-ms="294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPaymentsAvailable -->
+        <test-method signature="verifyPaymentSelectionAndNavigation()[pri:9, instance:testcases.TC13@ec756bd]" started-at="2024-04-15T20:25:43 PDT" name="verifyPaymentSelectionAndNavigation" finished-at="2024-04-15T20:25:45 PDT" duration-ms="1287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPaymentSelectionAndNavigation -->
+        <test-method signature="verifyOrder()[pri:10, instance:testcases.TC13@ec756bd]" started-at="2024-04-15T20:25:45 PDT" name="verifyOrder" finished-at="2024-04-15T20:25:45 PDT" duration-ms="820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrder -->
+        <test-method signature="verifyCardEntryAndPay()[pri:11, instance:testcases.TC13@ec756bd]" started-at="2024-04-15T20:25:46 PDT" name="verifyCardEntryAndPay" finished-at="2024-04-15T20:25:54 PDT" duration-ms="8295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCardEntryAndPay -->
+        <test-method signature="verifyTransactionDetailsPage()[pri:12, instance:testcases.TC13@ec756bd]" started-at="2024-04-15T20:25:54 PDT" name="verifyTransactionDetailsPage" finished-at="2024-04-15T20:25:54 PDT" duration-ms="414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTransactionDetailsPage -->
+        <test-method signature="verifyValidOTP()[pri:13, instance:testcases.TC13@ec756bd]" started-at="2024-04-15T20:25:54 PDT" name="verifyValidOTP" finished-at="2024-04-15T20:26:05 PDT" duration-ms="11047" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidOTP -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:testcases.TC13@ec756bd]" started-at="2024-04-15T20:26:05 PDT" name="quit" finished-at="2024-04-15T20:26:06 PDT" duration-ms="344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- testcases.TC13 -->
+      <class name="testcases.TC15">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC15@12d4bf7e]" started-at="2024-04-15T20:26:44 PDT" name="setup" finished-at="2024-04-15T20:26:51 PDT" duration-ms="7314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyButtonNavigation()[pri:1, instance:testcases.TC15@12d4bf7e]" started-at="2024-04-15T20:26:51 PDT" name="verifyButtonNavigation" finished-at="2024-04-15T20:26:52 PDT" duration-ms="1282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyButtonNavigation -->
+        <test-method signature="verifyProductAddedToCart()[pri:2, instance:testcases.TC15@12d4bf7e]" started-at="2024-04-15T20:26:52 PDT" name="verifyProductAddedToCart" finished-at="2024-04-15T20:26:52 PDT" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductAddedToCart -->
+        <test-method signature="verifyCustomerDetails()[pri:3, instance:testcases.TC15@12d4bf7e]" started-at="2024-04-15T20:26:52 PDT" name="verifyCustomerDetails" finished-at="2024-04-15T20:26:53 PDT" duration-ms="227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCustomerDetails -->
+        <test-method signature="verifyCustomerDetailsCanEdit()[pri:4, instance:testcases.TC15@12d4bf7e]" started-at="2024-04-15T20:26:53 PDT" name="verifyCustomerDetailsCanEdit" finished-at="2024-04-15T20:26:54 PDT" duration-ms="1803" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCustomerDetailsCanEdit -->
+        <test-method signature="verifyCheckoutNavigation()[pri:5, instance:testcases.TC15@12d4bf7e]" started-at="2024-04-15T20:26:54 PDT" name="verifyCheckoutNavigation" finished-at="2024-04-15T20:26:57 PDT" duration-ms="3161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCheckoutNavigation -->
+        <test-method signature="verifyProductDetails()[pri:6, instance:testcases.TC15@12d4bf7e]" started-at="2024-04-15T20:26:57 PDT" name="verifyProductDetails" finished-at="2024-04-15T20:27:00 PDT" duration-ms="2501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductDetails -->
+        <test-method signature="verifyOrderDetailsCheckoutButton()[pri:7, instance:testcases.TC15@12d4bf7e]" started-at="2024-04-15T20:27:00 PDT" name="verifyOrderDetailsCheckoutButton" finished-at="2024-04-15T20:27:00 PDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrderDetailsCheckoutButton -->
+        <test-method signature="verifyPaymentsAvailable()[pri:8, instance:testcases.TC15@12d4bf7e]" started-at="2024-04-15T20:27:00 PDT" name="verifyPaymentsAvailable" finished-at="2024-04-15T20:27:00 PDT" duration-ms="259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPaymentsAvailable -->
+        <test-method signature="verifyPaymentSelectionAndNavigation()[pri:9, instance:testcases.TC15@12d4bf7e]" started-at="2024-04-15T20:27:00 PDT" name="verifyPaymentSelectionAndNavigation" finished-at="2024-04-15T20:27:01 PDT" duration-ms="1263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPaymentSelectionAndNavigation -->
+        <test-method signature="verifyOrder()[pri:10, instance:testcases.TC15@12d4bf7e]" started-at="2024-04-15T20:27:02 PDT" name="verifyOrder" finished-at="2024-04-15T20:27:02 PDT" duration-ms="808" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrder -->
+        <test-method signature="verifyCardEntryAndPay()[pri:11, instance:testcases.TC15@12d4bf7e]" started-at="2024-04-15T20:27:02 PDT" name="verifyCardEntryAndPay" finished-at="2024-04-15T20:27:11 PDT" duration-ms="8250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCardEntryAndPay -->
+        <test-method signature="verifyTransactionDetailsPage()[pri:12, instance:testcases.TC15@12d4bf7e]" started-at="2024-04-15T20:27:11 PDT" name="verifyTransactionDetailsPage" finished-at="2024-04-15T20:27:11 PDT" duration-ms="294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTransactionDetailsPage -->
+        <test-method signature="verifyCancelOrder()[pri:13, instance:testcases.TC15@12d4bf7e]" started-at="2024-04-15T20:27:11 PDT" name="verifyCancelOrder" finished-at="2024-04-15T20:27:21 PDT" duration-ms="10005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCancelOrder -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:testcases.TC15@12d4bf7e]" started-at="2024-04-15T20:27:21 PDT" name="quit" finished-at="2024-04-15T20:27:21 PDT" duration-ms="296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- testcases.TC15 -->
+    </test> <!-- SeleniumAutomation -->
+  </suite> <!-- Suite -->
+</testng-results>

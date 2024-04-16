@@ -15,7 +15,7 @@ public class BaseTest {
     PaymentDetailsPage paymentDetailsPage;
     TransactionDetailsPage transactionDetailsPage;
 
-    @BeforeClass
+    @BeforeClass(alwaysRun = true)
     public void setup(){
         driver = BrowserFactory.launchBrowser("browser");
         driver.get("https://demo.midtrans.com/");
@@ -122,7 +122,7 @@ public class BaseTest {
         transactionDetailsPage.continueAfterCancelOrder();
         System.out.println("        Returned Home - "+transactionDetailsPage.transactionCancelledMessageFinal());
     }
-    @AfterClass
+    @AfterClass(alwaysRun = true)
     public void quit(){
         driver.close();
     }

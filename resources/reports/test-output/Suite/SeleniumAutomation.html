@@ -1,0 +1,275 @@
+<html>
+<head>
+<title>TestNG:  SeleniumAutomation</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>SeleniumAutomation</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>39/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Apr 15 20:25:24 PDT 2024</td>
+</tr>
+<tr><td>Total time:</td><td>117 seconds (117563 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>All regression sanity </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.TC14.verifyCustomerDetails()'><b>verifyCustomerDetails</b><br>Test class: testcases.TC14</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC14@14d3bc22</td></tr>
+<tr>
+<td title='testcases.TC14.verifyButtonNavigation()'><b>verifyButtonNavigation</b><br>Test class: testcases.TC14</td>
+<td></td>
+<td>1</td>
+<td>testcases.TC14@14d3bc22</td></tr>
+<tr>
+<td title='testcases.TC15.verifyPaymentSelectionAndNavigation()'><b>verifyPaymentSelectionAndNavigation</b><br>Test class: testcases.TC15</td>
+<td></td>
+<td>1</td>
+<td>testcases.TC15@12d4bf7e</td></tr>
+<tr>
+<td title='testcases.TC14.verifyOrder()'><b>verifyOrder</b><br>Test class: testcases.TC14</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC14@14d3bc22</td></tr>
+<tr>
+<td title='testcases.TC14.verifyInvalidOTP()'><b>verifyInvalidOTP</b><br>Test class: testcases.TC14</td>
+<td></td>
+<td>10</td>
+<td>testcases.TC14@14d3bc22</td></tr>
+<tr>
+<td title='testcases.TC13.verifyValidOTP()'><b>verifyValidOTP</b><br>Test class: testcases.TC13</td>
+<td></td>
+<td>11</td>
+<td>testcases.TC13@ec756bd</td></tr>
+<tr>
+<td title='testcases.TC15.verifyProductAddedToCart()'><b>verifyProductAddedToCart</b><br>Test class: testcases.TC15</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC15@12d4bf7e</td></tr>
+<tr>
+<td title='testcases.TC13.verifyPaymentSelectionAndNavigation()'><b>verifyPaymentSelectionAndNavigation</b><br>Test class: testcases.TC13</td>
+<td></td>
+<td>1</td>
+<td>testcases.TC13@ec756bd</td></tr>
+<tr>
+<td title='testcases.TC15.verifyCustomerDetails()'><b>verifyCustomerDetails</b><br>Test class: testcases.TC15</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC15@12d4bf7e</td></tr>
+<tr>
+<td title='testcases.TC15.verifyProductDetails()'><b>verifyProductDetails</b><br>Test class: testcases.TC15</td>
+<td></td>
+<td>2</td>
+<td>testcases.TC15@12d4bf7e</td></tr>
+<tr>
+<td title='testcases.TC13.verifyPaymentsAvailable()'><b>verifyPaymentsAvailable</b><br>Test class: testcases.TC13</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC13@ec756bd</td></tr>
+<tr>
+<td title='testcases.TC15.verifyPaymentsAvailable()'><b>verifyPaymentsAvailable</b><br>Test class: testcases.TC15</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC15@12d4bf7e</td></tr>
+<tr>
+<td title='testcases.TC15.verifyCheckoutNavigation()'><b>verifyCheckoutNavigation</b><br>Test class: testcases.TC15</td>
+<td></td>
+<td>3</td>
+<td>testcases.TC15@12d4bf7e</td></tr>
+<tr>
+<td title='testcases.TC13.verifyCustomerDetails()'><b>verifyCustomerDetails</b><br>Test class: testcases.TC13</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC13@ec756bd</td></tr>
+<tr>
+<td title='testcases.TC14.verifyProductAddedToCart()'><b>verifyProductAddedToCart</b><br>Test class: testcases.TC14</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC14@14d3bc22</td></tr>
+<tr>
+<td title='testcases.TC13.verifyCustomerDetailsCanEdit()'><b>verifyCustomerDetailsCanEdit</b><br>Test class: testcases.TC13</td>
+<td></td>
+<td>1</td>
+<td>testcases.TC13@ec756bd</td></tr>
+<tr>
+<td title='testcases.TC15.verifyOrder()'><b>verifyOrder</b><br>Test class: testcases.TC15</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC15@12d4bf7e</td></tr>
+<tr>
+<td title='testcases.TC14.verifyTransactionDetailsPage()'><b>verifyTransactionDetailsPage</b><br>Test class: testcases.TC14</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC14@14d3bc22</td></tr>
+<tr>
+<td title='testcases.TC15.verifyCancelOrder()'><b>verifyCancelOrder</b><br>Test class: testcases.TC15</td>
+<td></td>
+<td>10</td>
+<td>testcases.TC15@12d4bf7e</td></tr>
+<tr>
+<td title='testcases.TC13.verifyTransactionDetailsPage()'><b>verifyTransactionDetailsPage</b><br>Test class: testcases.TC13</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC13@ec756bd</td></tr>
+<tr>
+<td title='testcases.TC13.verifyProductDetails()'><b>verifyProductDetails</b><br>Test class: testcases.TC13</td>
+<td></td>
+<td>2</td>
+<td>testcases.TC13@ec756bd</td></tr>
+<tr>
+<td title='testcases.TC15.verifyCardEntryAndPay()'><b>verifyCardEntryAndPay</b><br>Test class: testcases.TC15</td>
+<td></td>
+<td>8</td>
+<td>testcases.TC15@12d4bf7e</td></tr>
+<tr>
+<td title='testcases.TC14.verifyOrderDetailsCheckoutButton()'><b>verifyOrderDetailsCheckoutButton</b><br>Test class: testcases.TC14</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC14@14d3bc22</td></tr>
+<tr>
+<td title='testcases.TC14.verifyPaymentSelectionAndNavigation()'><b>verifyPaymentSelectionAndNavigation</b><br>Test class: testcases.TC14</td>
+<td></td>
+<td>1</td>
+<td>testcases.TC14@14d3bc22</td></tr>
+<tr>
+<td title='testcases.TC13.verifyCardEntryAndPay()'><b>verifyCardEntryAndPay</b><br>Test class: testcases.TC13</td>
+<td></td>
+<td>8</td>
+<td>testcases.TC13@ec756bd</td></tr>
+<tr>
+<td title='testcases.TC15.verifyCustomerDetailsCanEdit()'><b>verifyCustomerDetailsCanEdit</b><br>Test class: testcases.TC15</td>
+<td></td>
+<td>1</td>
+<td>testcases.TC15@12d4bf7e</td></tr>
+<tr>
+<td title='testcases.TC15.verifyTransactionDetailsPage()'><b>verifyTransactionDetailsPage</b><br>Test class: testcases.TC15</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC15@12d4bf7e</td></tr>
+<tr>
+<td title='testcases.TC14.verifyCardEntryAndPay()'><b>verifyCardEntryAndPay</b><br>Test class: testcases.TC14</td>
+<td></td>
+<td>8</td>
+<td>testcases.TC14@14d3bc22</td></tr>
+<tr>
+<td title='testcases.TC13.verifyCheckoutNavigation()'><b>verifyCheckoutNavigation</b><br>Test class: testcases.TC13</td>
+<td></td>
+<td>3</td>
+<td>testcases.TC13@ec756bd</td></tr>
+<tr>
+<td title='testcases.TC15.verifyOrderDetailsCheckoutButton()'><b>verifyOrderDetailsCheckoutButton</b><br>Test class: testcases.TC15</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC15@12d4bf7e</td></tr>
+<tr>
+<td title='testcases.TC15.verifyButtonNavigation()'><b>verifyButtonNavigation</b><br>Test class: testcases.TC15</td>
+<td></td>
+<td>1</td>
+<td>testcases.TC15@12d4bf7e</td></tr>
+<tr>
+<td title='testcases.TC14.verifyProductDetails()'><b>verifyProductDetails</b><br>Test class: testcases.TC14</td>
+<td></td>
+<td>2</td>
+<td>testcases.TC14@14d3bc22</td></tr>
+<tr>
+<td title='testcases.TC13.verifyButtonNavigation()'><b>verifyButtonNavigation</b><br>Test class: testcases.TC13</td>
+<td></td>
+<td>1</td>
+<td>testcases.TC13@ec756bd</td></tr>
+<tr>
+<td title='testcases.TC14.verifyCustomerDetailsCanEdit()'><b>verifyCustomerDetailsCanEdit</b><br>Test class: testcases.TC14</td>
+<td></td>
+<td>1</td>
+<td>testcases.TC14@14d3bc22</td></tr>
+<tr>
+<td title='testcases.TC14.verifyPaymentsAvailable()'><b>verifyPaymentsAvailable</b><br>Test class: testcases.TC14</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC14@14d3bc22</td></tr>
+<tr>
+<td title='testcases.TC14.verifyCheckoutNavigation()'><b>verifyCheckoutNavigation</b><br>Test class: testcases.TC14</td>
+<td></td>
+<td>3</td>
+<td>testcases.TC14@14d3bc22</td></tr>
+<tr>
+<td title='testcases.TC13.verifyProductAddedToCart()'><b>verifyProductAddedToCart</b><br>Test class: testcases.TC13</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC13@ec756bd</td></tr>
+<tr>
+<td title='testcases.TC13.verifyOrderDetailsCheckoutButton()'><b>verifyOrderDetailsCheckoutButton</b><br>Test class: testcases.TC13</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC13@ec756bd</td></tr>
+<tr>
+<td title='testcases.TC13.verifyOrder()'><b>verifyOrder</b><br>Test class: testcases.TC13</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC13@ec756bd</td></tr>
+</table><p>
+</body>
+</html>

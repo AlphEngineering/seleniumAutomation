@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Automation Group Test">
+<suite name="Suite">
     <parameter name="config" value="single.conf.json"/>
-    <test name="Parallel Test" thread-count="1" parallel="classes">
+    <test name="SeleniumAutomation" thread-count="1" verbose="1" parallel="none">
         <groups>
+            <define name="All">
+                <include name="sanity"/>
+                <include name="regression"/>
+            </define>
+            <define name="Regression">
+                <include name="regression"/>
+            </define>
+            <define name="Sanity">
+                <include name="sanity"/>
+            </define>
             <run>
-                <include name="all" />
-                <exclude name="regression" />
-                <exclude name="sanity" />
+                <include name="All"/> <!-- Tests not running under <exclude/> tag. Use <include/> instead. -->
             </run>
         </groups>
         <classes>
@@ -15,6 +23,5 @@
             <class name="testcases.TC14"/>
             <class name="testcases.TC15"/>
         </classes>
-
     </test>
 </suite>

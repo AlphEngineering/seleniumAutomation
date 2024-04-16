@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="123.543" tests="39" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/alph/AE/git/seleniumAutomation/target/test-classes:/Users/alph/AE/git/seleniumAutomation/target/classes:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-java/4.19.1/selenium-java-4.19.1.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-api/4.19.1/selenium-api-4.19.1.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.19.1/selenium-chrome-driver-4.19.1.jar:/Users/alph/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.19.1/selenium-chromium-driver-4.19.1.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-json/4.19.1/selenium-json-4.19.1.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.19.1/selenium-manager-4.19.1.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v121/4.19.1/selenium-devtools-v121-4.19.1.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v122/4.19.1/selenium-devtools-v122-4.19.1.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v123/4.19.1/selenium-devtools-v123-4.19.1.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.19.1/selenium-devtools-v85-4.19.1.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.19.1/selenium-edge-driver-4.19.1.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.19.1/selenium-firefox-driver-4.19.1.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-http/4.19.1/selenium-http-4.19.1.jar:/Users/alph/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.19.1/selenium-ie-driver-4.19.1.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.19.1/selenium-remote-driver-4.19.1.jar:/Users/alph/.m2/repository/com/google/guava/guava/33.1.0-jre/guava-33.1.0-jre.jar:/Users/alph/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/alph/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/alph/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/alph/.m2/repository/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar:/Users/alph/.m2/repository/com/google/errorprone/error_prone_annotations/2.26.1/error_prone_annotations-2.26.1.jar:/Users/alph/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/alph/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.23.1-alpha/opentelemetry-semconv-1.23.1-alpha.jar:/Users/alph/.m2/repository/io/opentelemetry/opentelemetry-api/1.36.0/opentelemetry-api-1.36.0.jar:/Users/alph/.m2/repository/io/opentelemetry/opentelemetry-context/1.36.0/opentelemetry-context-1.36.0.jar:/Users/alph/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.36.0/opentelemetry-exporter-logging-1.36.0.jar:/Users/alph/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.36.0/opentelemetry-sdk-common-1.36.0.jar:/Users/alph/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.36.0/opentelemetry-sdk-extension-autoconfigure-spi-1.36.0.jar:/Users/alph/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.36.0/opentelemetry-sdk-extension-autoconfigure-1.36.0.jar:/Users/alph/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.36.0-alpha/opentelemetry-api-events-1.36.0-alpha.jar:/Users/alph/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.36.0/opentelemetry-sdk-trace-1.36.0.jar:/Users/alph/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.36.0-alpha/opentelemetry-extension-incubator-1.36.0-alpha.jar:/Users/alph/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.36.0/opentelemetry-sdk-1.36.0.jar:/Users/alph/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.36.0/opentelemetry-sdk-metrics-1.36.0.jar:/Users/alph/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.36.0/opentelemetry-sdk-logs-1.36.0.jar:/Users/alph/.m2/repository/net/bytebuddy/byte-buddy/1.14.12/byte-buddy-1.14.12.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-os/4.19.1/selenium-os-4.19.1.jar:/Users/alph/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.19.1/selenium-safari-driver-4.19.1.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-support/4.19.1/selenium-support-4.19.1.jar:/Users/alph/.m2/repository/org/testng/testng/7.8.0/testng-7.8.0.jar:/Users/alph/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/alph/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/alph/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="America/Tijuana"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/21.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/alph/AE/git/seleniumAutomation/target/surefire/surefirebooter-20240415202522752_3.jar /Users/alph/AE/git/seleniumAutomation/target/surefire 2024-04-15T20-25-22_567-jvmRun1 surefire-20240415202522752_1tmp surefire_0-20240415202522752_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/alph/AE/git/seleniumAutomation/target/test-classes:/Users/alph/AE/git/seleniumAutomation/target/classes:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-java/4.19.1/selenium-java-4.19.1.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-api/4.19.1/selenium-api-4.19.1.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.19.1/selenium-chrome-driver-4.19.1.jar:/Users/alph/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.19.1/selenium-chromium-driver-4.19.1.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-json/4.19.1/selenium-json-4.19.1.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.19.1/selenium-manager-4.19.1.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v121/4.19.1/selenium-devtools-v121-4.19.1.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v122/4.19.1/selenium-devtools-v122-4.19.1.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v123/4.19.1/selenium-devtools-v123-4.19.1.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.19.1/selenium-devtools-v85-4.19.1.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.19.1/selenium-edge-driver-4.19.1.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.19.1/selenium-firefox-driver-4.19.1.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-http/4.19.1/selenium-http-4.19.1.jar:/Users/alph/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.19.1/selenium-ie-driver-4.19.1.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.19.1/selenium-remote-driver-4.19.1.jar:/Users/alph/.m2/repository/com/google/guava/guava/33.1.0-jre/guava-33.1.0-jre.jar:/Users/alph/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/alph/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/alph/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/alph/.m2/repository/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar:/Users/alph/.m2/repository/com/google/errorprone/error_prone_annotations/2.26.1/error_prone_annotations-2.26.1.jar:/Users/alph/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/alph/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.23.1-alpha/opentelemetry-semconv-1.23.1-alpha.jar:/Users/alph/.m2/repository/io/opentelemetry/opentelemetry-api/1.36.0/opentelemetry-api-1.36.0.jar:/Users/alph/.m2/repository/io/opentelemetry/opentelemetry-context/1.36.0/opentelemetry-context-1.36.0.jar:/Users/alph/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.36.0/opentelemetry-exporter-logging-1.36.0.jar:/Users/alph/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.36.0/opentelemetry-sdk-common-1.36.0.jar:/Users/alph/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.36.0/opentelemetry-sdk-extension-autoconfigure-spi-1.36.0.jar:/Users/alph/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.36.0/opentelemetry-sdk-extension-autoconfigure-1.36.0.jar:/Users/alph/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.36.0-alpha/opentelemetry-api-events-1.36.0-alpha.jar:/Users/alph/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.36.0/opentelemetry-sdk-trace-1.36.0.jar:/Users/alph/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.36.0-alpha/opentelemetry-extension-incubator-1.36.0-alpha.jar:/Users/alph/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.36.0/opentelemetry-sdk-1.36.0.jar:/Users/alph/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.36.0/opentelemetry-sdk-metrics-1.36.0.jar:/Users/alph/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.36.0/opentelemetry-sdk-logs-1.36.0.jar:/Users/alph/.m2/repository/net/bytebuddy/byte-buddy/1.14.12/byte-buddy-1.14.12.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-os/4.19.1/selenium-os-4.19.1.jar:/Users/alph/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.19.1/selenium-safari-driver-4.19.1.jar:/Users/alph/.m2/repository/org/seleniumhq/selenium/selenium-support/4.19.1/selenium-support-4.19.1.jar:/Users/alph/.m2/repository/org/testng/testng/7.8.0/testng-7.8.0.jar:/Users/alph/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/alph/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/alph/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/alph"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="/usr/local/Cellar/openjdk/21.0.1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/alph/AE/git/seleniumAutomation"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/alph/AE/git/seleniumAutomation/target/surefire/surefirebooter-20240415202522752_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="21.0.1"/>
+    <property name="user.name" value="alph"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="11.7.10"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/alph/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/c3/yhl2xr0j7m53rxk45d9hz6440000gn/T/"/>
+    <property name="java.version" value="21.0.1"/>
+    <property name="user.dir" value="/Users/alph/AE/git/seleniumAutomation"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/alph/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="21.0.1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="verifyButtonNavigation" classname="testcases.TC13" time="1.526">
+    <system-out><![CDATA[* URL:  https://demo.midtrans.com/
+* TC_1 Button 'BuyNow' redirects to Shopping Cart page.
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="verifyProductAddedToCart" classname="testcases.TC13" time="0.111">
+    <system-out><![CDATA[* TC_2 Button 'Midtrans Pillow' is added to Cart @ Rp 20,000.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyCustomerDetails" classname="testcases.TC13" time="0.203">
+    <system-out><![CDATA[* TC_3 Customer Details are displayed on Shopping Cart.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyCustomerDetailsCanEdit" classname="testcases.TC13" time="1.767">
+    <system-out><![CDATA[* TC_4 Customer Details are editable and user can enter details.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyCheckoutNavigation" classname="testcases.TC13" time="3.181">
+    <system-out><![CDATA[* TC_5 Button 'Checkout' navigates to Order Details page.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyProductDetails" classname="testcases.TC13" time="2.486">
+    <system-out><![CDATA[* TC_6 Product details confirmed. Order ID #sample-store-1713237938
+]]></system-out>
+  </testcase>
+  <testcase name="verifyOrderDetailsCheckoutButton" classname="testcases.TC13" time="0.001">
+    <system-out><![CDATA[* TC_7 No additional 'Checkout' button. Payments already listed.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyPaymentsAvailable" classname="testcases.TC13" time="0.294">
+    <system-out><![CDATA[* TC_8 All payments listed: GoPay, Virtual Account, Credit/Debit, ShopeePay, QRIS, Alfa Group, Indomaret, Akulaku, Kredivo
+]]></system-out>
+  </testcase>
+  <testcase name="verifyPaymentSelectionAndNavigation" classname="testcases.TC13" time="1.288">
+    <system-out><![CDATA[* TC_9 Payment Credit/Debit selected. Navigation to Card Details page successful.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyOrder" classname="testcases.TC13" time="0.82">
+    <system-out><![CDATA[* TC_10 Order total before Promo: Rp20.000
+        Promo amount: -Rp1.000
+        Order total after Promo: Rp19.000
+]]></system-out>
+  </testcase>
+  <testcase name="verifyCardEntryAndPay" classname="testcases.TC13" time="8.292">
+    <system-out><![CDATA[* TC_11 Credit/Debit card entry confirmed. 'Pay Now' button clicked
+]]></system-out>
+  </testcase>
+  <testcase name="verifyTransactionDetailsPage" classname="testcases.TC13" time="0.413">
+    <system-out><![CDATA[* TC_12 Clicking 'Pay Now' redirects user to Transaction Details page.
+        Merchant Details Confirmed.
+        Merchant Name: Rubicon Store
+        Transaction Amount: 19000.00
+        Transaction Time: 4/15/2024 8:25:54 PM
+        Card Number: 48111111-1114
+]]></system-out>
+  </testcase>
+  <testcase name="verifyValidOTP" classname="testcases.TC13" time="11.047">
+    <system-out><![CDATA[* TC_13 Clicking 'Ok' button with VALID OTP returns - Order Successful.
+        Message: Order Successful
+        Returned Home - Thank you for your purchase. Get a nice sleep.
+
+]]></system-out>
+  </testcase>
+  <testcase name="verifyButtonNavigation" classname="testcases.TC14" time="1.37">
+    <system-out><![CDATA[* URL:  https://demo.midtrans.com/
+* TC_1 Button 'BuyNow' redirects to Shopping Cart page.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyProductAddedToCart" classname="testcases.TC14" time="0.095">
+    <system-out><![CDATA[* TC_2 Button 'Midtrans Pillow' is added to Cart @ Rp 20,000.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyCustomerDetails" classname="testcases.TC14" time="0.186">
+    <system-out><![CDATA[* TC_3 Customer Details are displayed on Shopping Cart.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyCustomerDetailsCanEdit" classname="testcases.TC14" time="1.656">
+    <system-out><![CDATA[* TC_4 Customer Details are editable and user can enter details.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyCheckoutNavigation" classname="testcases.TC14" time="3.138">
+    <system-out><![CDATA[* TC_5 Button 'Checkout' navigates to Order Details page.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyProductDetails" classname="testcases.TC14" time="2.889">
+    <system-out><![CDATA[* TC_6 Product details confirmed. Order ID #sample-store-1713237976
+]]></system-out>
+  </testcase>
+  <testcase name="verifyOrderDetailsCheckoutButton" classname="testcases.TC14" time="0.003">
+    <system-out><![CDATA[* TC_7 No additional 'Checkout' button. Payments already listed.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyPaymentsAvailable" classname="testcases.TC14" time="0.594">
+    <system-out><![CDATA[* TC_8 All payments listed: GoPay, Virtual Account, Credit/Debit, ShopeePay, QRIS, Alfa Group, Indomaret, Akulaku, Kredivo
+]]></system-out>
+  </testcase>
+  <testcase name="verifyPaymentSelectionAndNavigation" classname="testcases.TC14" time="1.396">
+    <system-out><![CDATA[* TC_9 Payment Credit/Debit selected. Navigation to Card Details page successful.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyOrder" classname="testcases.TC14" time="0.783">
+    <system-out><![CDATA[* TC_10 Order total before Promo: Rp20.000
+        Promo amount: -Rp1.000
+        Order total after Promo: Rp19.000
+]]></system-out>
+  </testcase>
+  <testcase name="verifyCardEntryAndPay" classname="testcases.TC14" time="8.365">
+    <system-out><![CDATA[* TC_11 Credit/Debit card entry confirmed. 'Pay Now' button clicked
+]]></system-out>
+  </testcase>
+  <testcase name="verifyTransactionDetailsPage" classname="testcases.TC14" time="0.335">
+    <system-out><![CDATA[* TC_12 Clicking 'Pay Now' redirects user to Transaction Details page.
+        Merchant Details Confirmed.
+        Merchant Name: Rubicon Store
+        Transaction Amount: 19000.00
+        Transaction Time: 4/15/2024 8:26:31 PM
+        Card Number: 48111111-1114
+]]></system-out>
+  </testcase>
+  <testcase name="verifyInvalidOTP" classname="testcases.TC14" time="10.314">
+    <system-out><![CDATA[* TC_14 Clicking 'Ok' button with INVALID OTP returns - Order Failed.
+        Message: Payment declined by bank
+        Returned Home - Sorry, something went wrong.
+
+]]></system-out>
+  </testcase>
+  <testcase name="verifyButtonNavigation" classname="testcases.TC15" time="1.283">
+    <system-out><![CDATA[* URL:  https://demo.midtrans.com/
+* TC_1 Button 'BuyNow' redirects to Shopping Cart page.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyProductAddedToCart" classname="testcases.TC15" time="0.097">
+    <system-out><![CDATA[* TC_2 Button 'Midtrans Pillow' is added to Cart @ Rp 20,000.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyCustomerDetails" classname="testcases.TC15" time="0.221">
+    <system-out><![CDATA[* TC_3 Customer Details are displayed on Shopping Cart.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyCustomerDetailsCanEdit" classname="testcases.TC15" time="1.801">
+    <system-out><![CDATA[* TC_4 Customer Details are editable and user can enter details.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyCheckoutNavigation" classname="testcases.TC15" time="3.159">
+    <system-out><![CDATA[* TC_5 Button 'Checkout' navigates to Order Details page.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyProductDetails" classname="testcases.TC15" time="2.504">
+    <system-out><![CDATA[* TC_6 Product details confirmed. Order ID #sample-store-1713238015
+]]></system-out>
+  </testcase>
+  <testcase name="verifyOrderDetailsCheckoutButton" classname="testcases.TC15" time="0.001">
+    <system-out><![CDATA[* TC_7 No additional 'Checkout' button. Payments already listed.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyPaymentsAvailable" classname="testcases.TC15" time="0.259">
+    <system-out><![CDATA[* TC_8 All payments listed: GoPay, Virtual Account, Credit/Debit, ShopeePay, QRIS, Alfa Group, Indomaret, Akulaku, Kredivo
+]]></system-out>
+  </testcase>
+  <testcase name="verifyPaymentSelectionAndNavigation" classname="testcases.TC15" time="1.262">
+    <system-out><![CDATA[* TC_9 Payment Credit/Debit selected. Navigation to Card Details page successful.
+]]></system-out>
+  </testcase>
+  <testcase name="verifyOrder" classname="testcases.TC15" time="0.803">
+    <system-out><![CDATA[* TC_10 Order total before Promo: Rp20.000
+        Promo amount: -Rp1.000
+        Order total after Promo: Rp19.000
+]]></system-out>
+  </testcase>
+  <testcase name="verifyCardEntryAndPay" classname="testcases.TC15" time="8.242">
+    <system-out><![CDATA[* TC_11 Credit/Debit card entry confirmed. 'Pay Now' button clicked
+]]></system-out>
+  </testcase>
+  <testcase name="verifyTransactionDetailsPage" classname="testcases.TC15" time="0.286">
+    <system-out><![CDATA[* TC_12 Clicking 'Pay Now' redirects user to Transaction Details page.
+        Merchant Details Confirmed.
+        Merchant Name: Rubicon Store
+        Transaction Amount: 19000.00
+        Transaction Time: 4/15/2024 8:27:10 PM
+        Card Number: 48111111-1114
+]]></system-out>
+  </testcase>
+  <testcase name="verifyCancelOrder" classname="testcases.TC15" time="10.005">
+    <system-out><![CDATA[* TC_15 Clicking 'Cancel' button returns - Order Failed.
+        Message: Payment declined by bank
+        Returned Home - Sorry, something went wrong.
+
+]]></system-out>
+  </testcase>
+</testsuite>
