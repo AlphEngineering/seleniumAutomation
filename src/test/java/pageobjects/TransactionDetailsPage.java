@@ -15,6 +15,7 @@ public class TransactionDetailsPage {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
+
     @FindBy(xpath="//iframe[@title='3ds-iframe']")
     WebElement transactionFrame;
     @FindBy(xpath="//iframe[@id='snap-midtrans']")
@@ -80,7 +81,7 @@ public class TransactionDetailsPage {
         return transactionCardNumber.getText();
     }
     public void transactionSubmitValidOTP(){ //Submits valid merchant OTP
-        inputMerchantOTP.sendKeys(propertyMerchant.getProperty("merchantOTP"));
+        inputMerchantOTP.sendKeys(propertyMerchant.getProperty("validOTP"));
         buttonOk.click();
     }
     public void transactionConfirmation(){
@@ -92,6 +93,9 @@ public class TransactionDetailsPage {
         }catch (AssertionError e) {
             System.out.println("* Transaction confirmation was NOT displayed!");
         }
+    }
+    public void returnHomeSuccess(){
+        driver.getCurrentUrl();
     }
     public String transactionConfirmationText1(){
         return transactionConfirmed1.getText();
