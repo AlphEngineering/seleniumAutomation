@@ -1,2 +1,2 @@
 #  Selenium Automation | Hybrid |
-Selenium | Java | TestNg | Cucumber
+Java | Maven | Selenium | TestNg | Cucumber
