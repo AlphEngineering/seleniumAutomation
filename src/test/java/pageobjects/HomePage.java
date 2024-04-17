@@ -33,5 +33,4 @@ public class HomePage {
         buttonBuyNow.click();
     }
 
-
 }

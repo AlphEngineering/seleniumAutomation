@@ -59,7 +59,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.2.5</version>
                 <configuration>
-                    <reportsDirectory>${project.basedir}/resources/reports/test-output</reportsDirectory>
+                    <reportsDirectory>resources/reports/testng</reportsDirectory>
                     <suiteXmlFiles>
                         <!-- pass testng.xml files as argument from command line -->
                         <!--                        <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>-->

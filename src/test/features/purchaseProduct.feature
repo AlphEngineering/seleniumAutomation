@@ -1,6 +1,6 @@
 Feature: Purchase Product Functionality
 
-  Scenario: Purchase product with valid merchant OTP
+  Scenario: Purchase product with valid OTP
     Given Website is loaded
     When User clicks Buy Now button
     Then Website navigates to Shopping Details page
@@ -24,7 +24,6 @@ Feature: Purchase Product Functionality
     Then Order returns Successful
     And Navigates to Homepage - Success
     But Displays Success confirmation message
-
 
   Scenario: Purchase product with invalid OTP
     Given Website is loaded

@@ -2,9 +2,12 @@ package stepdefinitions;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import io.cucumber.java.en.*;
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
 import pageobjects.*;
 import utils.BrowserFactory;
 import utils.GenericMethods;
@@ -28,12 +31,10 @@ public class PurchaseProductStepDef {
         orderDetailsPage = new OrderDetailsPage(driver);
         paymentDetailsPage = new PaymentDetailsPage(driver);
         transactionDetailsPage = new TransactionDetailsPage(driver);
-
     }
     @Given("Website is loaded")
-    public void verifyHomePage(){
-        homePage.getCurrentUrl();
-        homePage.displayBuyNow();
+    public void websiteIsLoaded(){
+        homePage.verifyBuyNowIsDisplayed();
     }
     @When("User clicks Buy Now button")
     public void verifyButtonNavigation(){
@@ -173,10 +174,13 @@ public class PurchaseProductStepDef {
     public void returnHomePageCanceledMessage(){
         transactionDetailsPage.transactionCancelledMessageFinal();
     }
+
     @After
     public void quit(){
+        GenericMethods.pauseExecutionFor(10);
         driver.close();
     }
+
 
 }
 
