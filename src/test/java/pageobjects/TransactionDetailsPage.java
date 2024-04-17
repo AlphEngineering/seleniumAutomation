@@ -97,6 +97,12 @@ public class TransactionDetailsPage {
     public void returnHomeSuccess(){
         driver.getCurrentUrl();
     }
+    public void returnHomeFailed(){
+        driver.getCurrentUrl();
+    }
+    public void returnHomeCanceled(){
+        driver.getCurrentUrl();
+    }
     public String transactionConfirmationText1(){
         return transactionConfirmed1.getText();
     }

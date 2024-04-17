@@ -4,8 +4,10 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import pageobjects.*;
 import utils.BrowserFactory;
+import utils.GenericMethods;
 
 import static utils.ReadData.propertyMerchant;
 
@@ -26,12 +28,14 @@ public class PurchaseProductStepDef {
         orderDetailsPage = new OrderDetailsPage(driver);
         paymentDetailsPage = new PaymentDetailsPage(driver);
         transactionDetailsPage = new TransactionDetailsPage(driver);
+
     }
     @Given("Website is loaded")
     public void verifyHomePage(){
-        homePage.verifyBuyNowIsDisplayed();
+        homePage.getCurrentUrl();
+        homePage.displayBuyNow();
     }
-    @When("User clicks 'Buy Now' button")
+    @When("User clicks Buy Now button")
     public void verifyButtonNavigation(){
         homePage.clickButtonBuyNow();
     }
@@ -39,7 +43,7 @@ public class PurchaseProductStepDef {
     public void verifyShoppingCart(){
         shoppingDetailsPage.verifyShoppingCartIsDisplayed();
     }
-    @And("Product 'Midtrans Pillow' is added to Cart")
+    @And("Product Midtrans Pillow is added to Cart")
     public void verifyProductAddedToCart(){
         shoppingDetailsPage.productAddedToCart();
     }
@@ -51,7 +55,7 @@ public class PurchaseProductStepDef {
     public void verifyCustomerDetailsCanEdit(){
         shoppingDetailsPage.inputCustomerDetails();
     }
-    @And("User clicks 'Checkout' button")
+    @And("User clicks Checkout button")
     public void verifyCheckoutNavigation(){
         shoppingDetailsPage.clickToCheckOut();
     }
@@ -95,7 +99,7 @@ public class PurchaseProductStepDef {
     public void verifyCardEntryAndPay(){
         paymentDetailsPage.entryCardDetails();
     }
-    @And("User clicks 'Pay Now' button")
+    @And("User clicks Pay Now button")
     public void verifyPayNowButton(){
         paymentDetailsPage.buttonPayNow();
     }
@@ -111,16 +115,16 @@ public class PurchaseProductStepDef {
         transactionDetailsPage.getCardNumber();
     }
     //Using Valid OTP
-    @And("User clicks 'Ok' button with {string}")
-    public void verifyValidOTP(String validOTP){
-        validOTP = propertyMerchant.getProperty("validOTP");
+    @And("User clicks Ok button with valid {string}")
+    public void verifyValidOTP(String OTP){
+        OTP = propertyMerchant.getProperty("validOTP");
         transactionDetailsPage.transactionSubmitValidOTP();
     }
     @Then("Order returns Successful")
     public void orderSuccessful(){
         transactionDetailsPage.transactionConfirmation();
     }
-    @And("Navigates to Homepage")
+    @And("Navigates to Homepage - Success")
     public void returnHomePageSuccessful(){
         transactionDetailsPage.returnHomeSuccess();
     }
@@ -131,9 +135,9 @@ public class PurchaseProductStepDef {
     }
 
     //Using Invalid OTP
-    @And("User clicks 'Ok' button with {string}")
-    public void verifyInvalidOTP(String invalidOTP){
-        invalidOTP = propertyMerchant.getProperty("invalidOTP");
+    @And("User clicks Ok button with invalid {string}")
+    public void verifyInvalidOTP(String OTP){
+        OTP = propertyMerchant.getProperty("invalidOTP");
         transactionDetailsPage.transactionSubmitInvalidOTP();
     }
     @Then("Order returns Failed")
@@ -141,13 +145,17 @@ public class PurchaseProductStepDef {
         transactionDetailsPage.getFailedMessage();
         transactionDetailsPage.continueAfterInvalidOTP();
     }
+    @And("Navigates to Homepage - Failed")
+    public void returnHomePageFailed(){
+        transactionDetailsPage.returnHomeFailed();
+    }
     @But("Displays Failed confirmation message")
     public void returnHomePageFailedMessage(){
         transactionDetailsPage.transactionInvalidMessageFinal();
     }
 
     //Cancel Order
-    @And("User clicks 'Cancel' button")
+    @And("User clicks Cancel button")
     public void verifyCancelOrder(){
         transactionDetailsPage.transactionFailedCanceled();
     }
@@ -157,11 +165,14 @@ public class PurchaseProductStepDef {
         transactionDetailsPage.continueAfterCancelOrder();
 
     }
+    @And("Navigates to Homepage - Canceled")
+    public void returnHomePageCanceled(){
+        transactionDetailsPage.returnHomeCanceled();
+    }
     @But("Displays Canceled confirmation message")
     public void returnHomePageCanceledMessage(){
         transactionDetailsPage.transactionCancelledMessageFinal();
     }
-
     @After
     public void quit(){
         driver.close();

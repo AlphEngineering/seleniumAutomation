@@ -2,7 +2,6 @@ package pageobjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.devtools.v85.page.Page;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -26,6 +25,9 @@ public class HomePage {
         }catch (AssertionError e){
             System.out.println("* 'BuyNow' button is NOT displayed!");
         }
+    }
+    public boolean displayBuyNow(){
+        return buttonBuyNow.isDisplayed();
     }
     public void clickButtonBuyNow(){
         buttonBuyNow.click();
